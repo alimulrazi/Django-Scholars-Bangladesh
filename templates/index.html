@@ -1,0 +1,20 @@
+{% extends 'layouts.html' %}
+
+{% block title %}
+Welcome to home page of Django
+{% endblock %}
+
+
+
+{% block content %}
+{% include 'slider.html' %}
+<h1>hellloooo Home page</h1>
+<p>Name: {{ name }}</p>
+<p>Phone: {{ phone }}</p>
+<p>Email: {{ email }}</p>
+<ul>
+    {% for country in  countrys %}
+    <li>{{ country }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
