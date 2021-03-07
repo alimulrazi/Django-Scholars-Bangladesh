@@ -1,6 +1,6 @@
-'''
 from django.shortcuts import render
-from django.http import HttpResponse
+
+# Create your views here.
 
 def home(request):
     contact_info = {
@@ -10,5 +10,3 @@ def home(request):
         "countrys": ['Bangladesh','United States', 'United Kingdom']
     }
     return render(request,'index.html', contact_info)
-    #return HttpResponse( "Welcome to home page")
-    '''
